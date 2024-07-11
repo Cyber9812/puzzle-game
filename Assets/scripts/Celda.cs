@@ -74,6 +74,11 @@ public class Celda : MonoBehaviour
 
                 Vector3 wmp = Camera.main.ScreenToWorldPoint(mp);
                 transform.position = wmp + offset;
+
+                if(Input.GetMouseButtonUp(2))
+                {
+                    agarrado = false;
+                }
             }
 
         }
